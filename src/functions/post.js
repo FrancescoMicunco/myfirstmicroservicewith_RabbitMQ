@@ -1,5 +1,7 @@
 import axios from "axios";
 
+// questa funzione creau un record sul DB secondario
+//usando il corpo del messaggio ricevuto dal BUS controller
 export const postFeedback = function(msg) {
     const body = msg.content.toString();
     console.log(" [x] Received %s", body);
